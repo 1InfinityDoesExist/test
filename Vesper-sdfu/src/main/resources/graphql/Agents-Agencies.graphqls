@@ -1,0 +1,32 @@
+scalar Date
+scalar LocalDateTime
+scalar LocalDate
+
+schema {
+query: Query
+}
+type Query{
+	getAllAgents:[Agents]
+	getAllAgencies:[Agencies]
+}
+type Agents{
+    id:Long
+    creationDate:LocalDateTime
+    modificationDate:LocalDateTime
+    designation:String
+    deleteFlag:Boolean
+    name:String 
+    dateOfJoining:LocalDateTime
+    allotedMG:String
+}
+type Agencies{
+    id:Long
+    creationDate:LocalDateTime
+    modificationDate:LocalDateTime
+    designation:String
+    deleteFlag:Boolean
+    agencyName:String
+    agencyAddress:String
+    numberOfAgents:String
+    agencyCreationDate:LocalDateTime
+}

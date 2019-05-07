@@ -1,0 +1,99 @@
+{
+	"definitions": {
+		
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "The Root Schema",
+	"required": [
+		"id",
+		"creationDate",
+		"modificationDate",
+		"designation",
+		"deleteFlag",
+		"name",
+		"dateOfJoining",
+		"allotedMG"
+	],
+	"properties": {
+		"id": {
+			"$id": "#/properties/id",
+			"type": "integer",
+			"title": "The Id Schema",
+			"default": 0,
+			"examples": [
+				15655
+			]
+		},
+		"creationDate": {
+			"$id": "#/properties/creationDate",
+			"type": "string",
+			"title": "The Creationdate Schema",
+			"default": "",
+			"examples": [
+				"2019-05-06T16:17:20.395Z"
+			],
+			"pattern": "^(.*)$"
+		},
+		"modificationDate": {
+			"$id": "#/properties/modificationDate",
+			"type": "string",
+			"title": "The Modificationdate Schema",
+			"default": "",
+			"examples": [
+				"2019-05-06T16:17:20.395Z"
+			],
+			"pattern": "^(.*)$"
+		},
+		"designation": {
+			"$id": "#/properties/designation",
+			"type": "string",
+			"title": "The Designation Schema",
+			"default": "",
+			"examples": [
+				"SuperCop"
+			],
+			"pattern": "^(.*)$"
+		},
+		"deleteFlag": {
+			"$id": "#/properties/deleteFlag",
+			"type": "boolean",
+			"title": "The Deleteflag Schema",
+			"default": false,
+			"examples": [
+				false
+			]
+		},
+		"name": {
+			"$id": "#/properties/name",
+			"type": "string",
+			"title": "The Name Schema",
+			"default": "",
+			"examples": [
+				"ChulBulPandey"
+			],
+			"pattern": "^(.*)$"
+		},
+		"dateOfJoining": {
+			"$id": "#/properties/dateOfJoining",
+			"type": "string",
+			"title": "The Dateofjoining Schema",
+			"default": "",
+			"examples": [
+				"2016-11-09T11:44:44.797Z"
+			],
+			"pattern": "^(.*)$"
+		},
+		"allotedMG": {
+			"$id": "#/properties/allotedMG",
+			"type": "string",
+			"title": "The Allotedmg Schema",
+			"default": "",
+			"examples": [
+				"SWAT"
+			],
+			"pattern": "^(.*)$"
+		}
+	}
+}

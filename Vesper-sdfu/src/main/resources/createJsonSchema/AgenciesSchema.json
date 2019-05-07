@@ -1,0 +1,110 @@
+{
+	"definitions": {
+		
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "The Root Schema",
+	"required": [
+		"id",
+		"creationDate",
+		"modificationDate",
+		"designation",
+		"deleteFlag",
+		"agencyName",
+		"agencyAddress",
+		"numberOfAgents",
+		"agencyCreationDate"
+	],
+	"properties": {
+		"id": {
+			"$id": "#/properties/id",
+			"type": "integer",
+			"title": "The Id Schema",
+			"default": 0,
+			"examples": [
+				2
+			]
+		},
+		"creationDate": {
+			"$id": "#/properties/creationDate",
+			"type": "string",
+			"title": "The Creationdate Schema",
+			"default": "",
+			"examples": [
+				"2019-05-04T23:06:09.460Z"
+			],
+			"pattern": "^(.*)$"
+		},
+		"modificationDate": {
+			"$id": "#/properties/modificationDate",
+			"type": "string",
+			"title": "The Modificationdate Schema",
+			"default": "",
+			"examples": [
+				"2019-05-04T23:06:09.460Z"
+			],
+			"pattern": "^(.*)$"
+		},
+		"designation": {
+			"$id": "#/properties/designation",
+			"type": "string",
+			"title": "The Designation Schema",
+			"default": "",
+			"examples": [
+				"UnderCoverAgent"
+			],
+			"pattern": "^(.*)$"
+		},
+		"deleteFlag": {
+			"$id": "#/properties/deleteFlag",
+			"type": "boolean",
+			"title": "The Deleteflag Schema",
+			"default": false,
+			"examples": [
+				false
+			]
+		},
+		"agencyName": {
+			"$id": "#/properties/agencyName",
+			"type": "string",
+			"title": "The Agencyname Schema",
+			"default": "",
+			"examples": [
+				"MI6_New"
+			],
+			"pattern": "^(.*)$"
+		},
+		"agencyAddress": {
+			"$id": "#/properties/agencyAddress",
+			"type": "string",
+			"title": "The Agencyaddress Schema",
+			"default": "",
+			"examples": [
+				"Banglore, US east 2"
+			],
+			"pattern": "^(.*)$"
+		},
+		"numberOfAgents": {
+			"$id": "#/properties/numberOfAgents",
+			"type": "string",
+			"title": "The Numberofagents Schema",
+			"default": "",
+			"examples": [
+				"34"
+			],
+			"pattern": "^(.*)$"
+		},
+		"agencyCreationDate": {
+			"$id": "#/properties/agencyCreationDate",
+			"type": "string",
+			"title": "The Agencycreationdate Schema",
+			"default": "",
+			"examples": [
+				"2015-08-04T10:11:30.000Z"
+			],
+			"pattern": "^(.*)$"
+		}
+	}
+}
